@@ -1,0 +1,6 @@
+category: Gnome Shells
+requires: cygwin atk glib2 gtk2-x11 libGL1 libGLU1 libXft2 libncurses8 pango
+sdesc: "GTK+ terminal emulator widget (runtime)"
+ldesc: "VTE includes a library (libvte) which implements such a terminal
+emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
+wraps that widget in a GTK window, and a Python binding."
