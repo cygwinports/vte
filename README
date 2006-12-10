@@ -5,35 +5,35 @@ emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
 wraps that widget in a GTK window, and a Python binding.
 
 Runtime requirements:
-  cygwin-1.5.20-1 (20060604)
-  atk-1.10.3-1
-  glib2-2.10.2-1
-  gtk2-x11-2.8.17-1
-  libGL1-6.4.2-1
-  libGLU1-6.4.2-1
-  libXft2-2.1.8.2-1
-  libncurses8-5.5-2
-  pango-1.10.4-1
+  cygwin-1.5.22-1
+  atk-1.12.3-1
+  glib2-2.12.4-1
+  gtk2-x11-2.10.6-1
+  libGL1-6.5.1-1
+  libGLU1-6.5.1-1
+  libXft2-2.1.11-1
+  libncurses8-5.5-3
+  pango-1.14.8-1
 
 Python bindings requirements:
-  pygobject2-2.10.1-1
-  pygtk2-2.8.6-1
+  pygobject2-2.12.3-1
+  pygtk2-2.10.3-1
   python-2.4.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1 (20060604)
-  autoconf2.5-2.59-2
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-2
   automake1.9-1.9.6-1
-  cygport-0.2.1-1
-  binutils-20050610-1
+  cygport-0.2.7-1
+  binutils-20060817-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  gtk-doc-1.5-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  pkg-config-0.20-1
-  sed-4.1.4-1
+  gtk-doc-1.7-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical download:
   ftp://ftp.gnome.org/pub/GNOME/sources/vte/
@@ -56,9 +56,10 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
-  /usr/bin/cygvte-4.dll
+(vte)
+  /usr/bin/cygvte-9.dll
   /usr/bin/vte.exe
   /usr/lib/vte/decset
   /usr/lib/vte/gnome-pty-helper.exe
@@ -71,15 +72,15 @@ Files included in the binary package:
   /usr/lib/vte/utf8mode.exe
   /usr/lib/vte/vterdb.exe
   /usr/lib/vte/window
-  /usr/share/doc/Cygwin/vte-0.12.2.README
-  /usr/share/doc/vte-0.12.2/AUTHORS
-  /usr/share/doc/vte-0.12.2/COPYING
-  /usr/share/doc/vte-0.12.2/ChangeLog
-  /usr/share/doc/vte-0.12.2/HACKING
-  /usr/share/doc/vte-0.12.2/INSTALL
-  /usr/share/doc/vte-0.12.2/MAINTAINERS
-  /usr/share/doc/vte-0.12.2/NEWS
-  /usr/share/doc/vte-0.12.2/README
+  /usr/share/doc/Cygwin/vte-0.14.1.README
+  /usr/share/doc/vte-0.14.1/AUTHORS
+  /usr/share/doc/vte-0.14.1/COPYING
+  /usr/share/doc/vte-0.14.1/ChangeLog
+  /usr/share/doc/vte-0.14.1/HACKING
+  /usr/share/doc/vte-0.14.1/INSTALL
+  /usr/share/doc/vte-0.14.1/MAINTAINERS
+  /usr/share/doc/vte-0.14.1/NEWS
+  /usr/share/doc/vte-0.14.1/README
   /usr/share/locale/am/LC_MESSAGES/vte.mo
   /usr/share/locale/ang/LC_MESSAGES/vte.mo
   /usr/share/locale/ar/LC_MESSAGES/vte.mo
@@ -87,6 +88,7 @@ Files included in the binary package:
   /usr/share/locale/be/LC_MESSAGES/vte.mo
   /usr/share/locale/bg/LC_MESSAGES/vte.mo
   /usr/share/locale/bn/LC_MESSAGES/vte.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/vte.mo
   /usr/share/locale/bs/LC_MESSAGES/vte.mo
   /usr/share/locale/ca/LC_MESSAGES/vte.mo
   /usr/share/locale/cs/LC_MESSAGES/vte.mo
@@ -126,12 +128,12 @@ Files included in the binary package:
   /usr/share/locale/mk/LC_MESSAGES/vte.mo
   /usr/share/locale/ml/LC_MESSAGES/vte.mo
   /usr/share/locale/mn/LC_MESSAGES/vte.mo
+  /usr/share/locale/mr/LC_MESSAGES/vte.mo
   /usr/share/locale/ms/LC_MESSAGES/vte.mo
   /usr/share/locale/nb/LC_MESSAGES/vte.mo
   /usr/share/locale/ne/LC_MESSAGES/vte.mo
   /usr/share/locale/nl/LC_MESSAGES/vte.mo
   /usr/share/locale/nn/LC_MESSAGES/vte.mo
-  /usr/share/locale/no/LC_MESSAGES/vte.mo
   /usr/share/locale/or/LC_MESSAGES/vte.mo
   /usr/share/locale/pa/LC_MESSAGES/vte.mo
   /usr/share/locale/pl/LC_MESSAGES/vte.mo
@@ -159,13 +161,7 @@ Files included in the binary package:
   /usr/share/locale/zh_TW/LC_MESSAGES/vte.mo
   /usr/share/vte/termcap/xterm
 
-Files included in the pyvte package:
-
-  /usr/lib/python2.4/site-packages/gtk-2.0/vtemodule.dll
-  /usr/lib/python2.4/site-packages/gtk-2.0/vtemodule.la
-
-Files included in the devel package:
-
+(vte-devel)
   /usr/include/vte/pty.h
   /usr/include/vte/reaper.h
   /usr/include/vte/vte.h
@@ -174,8 +170,11 @@ Files included in the devel package:
   /usr/lib/libvte.la
   /usr/lib/pkgconfig/vte.pc
 
-Files included in the doc package:
+(pyvte)
+  /usr/lib/python2.4/site-packages/gtk-2.0/vtemodule.dll
+  /usr/lib/python2.4/site-packages/gtk-2.0/vtemodule.la
 
+(vte-doc)
   /usr/share/gtk-doc/html/vte/VteReaper.html
   /usr/share/gtk-doc/html/vte/VteTerminal.html
   /usr/share/gtk-doc/html/vte/VteTerminalAccessible.html
