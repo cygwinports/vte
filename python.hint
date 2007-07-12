@@ -1,5 +1,5 @@
 category: Gnome Python
-requires: cygwin python pygobject2 pygtk2 vte
+requires: cygwin python python-gobject2 python-gtk2 vte
 external-source: vte
 sdesc: "GTK+ terminal emulator widget (Python bindings)"
 ldesc: "VTE includes a library (libvte) which implements such a terminal
