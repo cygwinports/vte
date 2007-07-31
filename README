@@ -7,9 +7,9 @@ wraps that widget in a GTK window, and a Python binding.
 Runtime requirements:
   cygwin-1.5.24-2
   atk-1.18.0-1
-  gdk-pixbuf2-2.10.13-1
-  glib2-2.12.12-2
-  gtk2-x11-2.10.13-1
+  gdk-pixbuf2-2.10.14-1
+  glib2-2.12.13-1
+  gtk2-x11-2.10.14-1
   libGL1-6.5.3-1
   libX11_6-1.1.1-1
   libXft2-2.1.12-1
@@ -17,12 +17,12 @@ Runtime requirements:
   libfreetype26-2.3.5-1
   libintl8-0.15-1
   libncurses8-5.5-3
-  pango-1.16.4-1
+  pango-1.16.5-1
 
 Python bindings requirements:
   python-2.5.1-3
   python-gobject2-2.12.3-2
-  python-gtk2-2.10.5-1
+  python-gtk2-2.10.6-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -46,17 +46,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vte-0.16.6-1-src.tar.bz2
+  unpack vte-0.16.8-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vte-0.16.6-1.cygport all
+  cygport ./vte-0.16.8-1.cygport all
 
 This will create:
-  /usr/src/python-vte-0.16.6-1.tar.bz2
-  /usr/src/vte-0.16.6-1-src.tar.bz2
-  /usr/src/vte-0.16.6-1.tar.bz2
-  /usr/src/vte-devel-0.16.6-1.tar.bz2
+  /usr/src/python-vte-0.16.8-1.tar.bz2
+  /usr/src/vte-0.16.8-1-src.tar.bz2
+  /usr/src/vte-0.16.8-1.tar.bz2
+  /usr/src/vte-devel-0.16.8-1.tar.bz2
 
 -------------------------------------------
 
@@ -76,15 +76,15 @@ Files included in the binary packages:
   /usr/lib/vte/utf8mode.exe
   /usr/lib/vte/vterdb.exe
   /usr/lib/vte/window
-  /usr/share/doc/Cygwin/vte-0.16.6.README
-  /usr/share/doc/vte-0.16.6/AUTHORS
-  /usr/share/doc/vte-0.16.6/COPYING
-  /usr/share/doc/vte-0.16.6/ChangeLog
-  /usr/share/doc/vte-0.16.6/HACKING
-  /usr/share/doc/vte-0.16.6/INSTALL
-  /usr/share/doc/vte-0.16.6/MAINTAINERS
-  /usr/share/doc/vte-0.16.6/NEWS
-  /usr/share/doc/vte-0.16.6/README
+  /usr/share/doc/Cygwin/vte-0.16.8.README
+  /usr/share/doc/vte-0.16.8/AUTHORS
+  /usr/share/doc/vte-0.16.8/COPYING
+  /usr/share/doc/vte-0.16.8/ChangeLog
+  /usr/share/doc/vte-0.16.8/HACKING
+  /usr/share/doc/vte-0.16.8/INSTALL
+  /usr/share/doc/vte-0.16.8/MAINTAINERS
+  /usr/share/doc/vte-0.16.8/NEWS
+  /usr/share/doc/vte-0.16.8/README
   /usr/share/locale/am/LC_MESSAGES/vte.mo
   /usr/share/locale/ang/LC_MESSAGES/vte.mo
   /usr/share/locale/ar/LC_MESSAGES/vte.mo
@@ -196,6 +196,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 0.16.8-1 -----
+Version bump.
 
 ----- version 0.16.6-1 -----
 Version bump for GNOME 2.18.
