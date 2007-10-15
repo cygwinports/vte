@@ -1,7 +1,7 @@
 category: Gnome
-requires: cygwin atk-devel glib2-devel gtk2-x11-devel mesa-devel libX11-devel libXft-devel libfontconfig-devel libfreetype26-devel gettext libncurses-devel pango-devel
+requires: cygwin atk-devel glib2-devel gtk2-x11-devel mesa-devel libX11-devel libXft-devel libfontconfig-devel libfreetype2-devel gettext libncurses-devel pango-devel
 external-source: vte
 sdesc: "GTK+ terminal emulator widget (development)"
 ldesc: "VTE includes a library (libvte) which implements such a terminal
-emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
+emulator widget for GTK+ 2.x, a sample application (vte) which
 wraps that widget in a GTK window, and a Python binding."
