@@ -46,17 +46,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vte-0.16.9-X-src.tar.bz2
+  unpack vte-0.16.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vte-0.16.9-X.cygport all
+  cygport ./vte-0.16.10-X.cygport all
 
 This will create:
-  /usr/src/python-vte-0.16.9-X.tar.bz2
-  /usr/src/vte-0.16.9-X-src.tar.bz2
-  /usr/src/vte-0.16.9-X.tar.bz2
-  /usr/src/vte-devel-0.16.9-X.tar.bz2
+  /usr/src/python-vte-0.16.10-X.tar.bz2
+  /usr/src/vte-0.16.10-X-src.tar.bz2
+  /usr/src/vte-0.16.10-X.tar.bz2
+  /usr/src/vte-devel-0.16.10-X.tar.bz2
 
 -------------------------------------------
 
@@ -75,15 +75,15 @@ Files included in the binary packages:
   /usr/lib/vte/utf8mode.exe
   /usr/lib/vte/vterdb.exe
   /usr/lib/vte/window
-  /usr/share/doc/Cygwin/vte-0.16.9.README
-  /usr/share/doc/vte-0.16.9/AUTHORS
-  /usr/share/doc/vte-0.16.9/COPYING
-  /usr/share/doc/vte-0.16.9/ChangeLog
-  /usr/share/doc/vte-0.16.9/HACKING
-  /usr/share/doc/vte-0.16.9/INSTALL
-  /usr/share/doc/vte-0.16.9/MAINTAINERS
-  /usr/share/doc/vte-0.16.9/NEWS
-  /usr/share/doc/vte-0.16.9/README
+  /usr/share/doc/Cygwin/vte-0.16.10.README
+  /usr/share/doc/vte-0.16.10/AUTHORS
+  /usr/share/doc/vte-0.16.10/COPYING
+  /usr/share/doc/vte-0.16.10/ChangeLog
+  /usr/share/doc/vte-0.16.10/HACKING
+  /usr/share/doc/vte-0.16.10/INSTALL
+  /usr/share/doc/vte-0.16.10/MAINTAINERS
+  /usr/share/doc/vte-0.16.10/NEWS
+  /usr/share/doc/vte-0.16.10/README
   /usr/share/locale/am/LC_MESSAGES/vte.mo
   /usr/share/locale/ang/LC_MESSAGES/vte.mo
   /usr/share/locale/ar/LC_MESSAGES/vte.mo
@@ -196,8 +196,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.16.9-2 -----
-Rebuilt for glib-2.14, gtk+-2.12, and mesa 7.0.
+----- version 0.16.10-1 -----
+Version bump.
 
 ----- version 0.16.9-1 -----
 Version bump.
