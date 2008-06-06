@@ -1,0 +1,19 @@
+inherit python gnome2
+
+DESCRIPTION="GNOME Virtual Terminal Emulator"
+
+CYGCONF_ARGS="
+	--libexecdir=/usr/lib/vte
+	--enable-python
+	--disable-gnome-pty-helper
+	--with-default-emulation=xterm
+	--with-glX
+	--with-pangox
+	--with-xft2
+"
+
+PKG_NAMES="${PN} ${PN}-devel python-${PN}"
+PKG_HINTS="setup devel python"
+PKG_CONTENTS[0]='--exclude=gtk-doc usr/bin/ usr/lib/vte/ usr/share/'
+PKG_CONTENTS[1]='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+PKG_CONTENTS[2]="${PYTHON_SITELIB#/}"
