@@ -19,14 +19,3 @@
  nodist_vtemodule_la_SOURCES = vte.c
  
  vte.c: vte.defs vte.override
---- origsrc/vte-0.16.14/src/pty.c	2008-06-02 14:54:24.000000000 -0500
-+++ src/vte-0.16.14/src/pty.c	2008-06-05 13:34:40.140625000 -0500
-@@ -19,6 +19,8 @@
- #include "../config.h"
- #include <sys/types.h>
- #include <sys/ioctl.h>
-+#include <sys/socket.h>
-+#include <sys/uio.h>
- #ifdef HAVE_SYS_TERMIOS_H
- #include <sys/termios.h>
- #endif

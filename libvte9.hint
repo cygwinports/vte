@@ -1,5 +1,6 @@
 category: Gnome Shells
-requires: cygwin atk glib2 gtk2-x11 libGL1 libX11_6 libXft2 libfontconfig1 libfreetype26 libintl8 libncurses8 pango
+requires: cygwin libatk1.0_0 libfontconfig1 libfreetype26 libgdk_pixbuf2.0_0 libGL1 libglib2.0_0 libgtk2.0_0 libintl8 libncurses8 libpango1.0_0 libX11_6 libXft2 libXrender1
+external-source: vte
 sdesc: "GTK+ terminal emulator widget (runtime)"
 ldesc: "VTE includes a library (libvte) which implements such a terminal
 emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
