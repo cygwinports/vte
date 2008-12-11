@@ -3,6 +3,8 @@ inherit python gnome2
 DESCRIPTION="GNOME Virtual Terminal Emulator"
 
 PATCH_URI="
+	mirror://portage/x11-libs/${PN}/files/${P}-fix-highlighting-on-activity.patch
+	mirror://portage/x11-libs/${PN}/files/${P}-no-null-backspace.patch
 	0.16.14-python.patch
 	0.17.4-disable-gnome-pty-helper.patch
 "
