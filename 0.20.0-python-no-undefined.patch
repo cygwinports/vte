@@ -1,0 +1,13 @@
+--- origsrc/vte-0.20.0/python/Makefile.am	2009-03-05 08:06:07.000000000 -0600
++++ src/vte-0.20.0/python/Makefile.am	2009-03-18 23:45:54.982500000 -0500
+@@ -20,8 +20,8 @@ vtemodule_la_CFLAGS = $(VTE_CFLAGS) $(X_
+ 
+ # we do this to suport building with -Wl,-z,defs which errors on
+ # vtemodule.so as we cannot include $(PYTHON_LIBS) due to bug 410986.
+-vtemodule_la_LDFLAGS = -module -avoid-version -export-symbols-regex initvte $(PYTHON_LDFLAGS) $(AM_LDFLAGS)
+-vtemodule_la_LIBADD = $(top_builddir)/src/libvte.la $(LIBS) $(PYGTK_LIBS) $(VTE_LIBS) $(X_LIBS)
++vtemodule_la_LDFLAGS = -module -avoid-version -no-undefined -export-symbols-regex initvte $(PYTHON_LDFLAGS) $(AM_LDFLAGS)
++vtemodule_la_LIBADD = $(top_builddir)/src/libvte.la $(LIBS) $(PYGTK_LIBS) $(PYTHON_LIBS) $(VTE_LIBS) $(X_LIBS)
+ nodist_vtemodule_la_SOURCES = vte.c
+ 
+ vte.c: vte.defs vte.override

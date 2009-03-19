@@ -5,38 +5,34 @@ emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
 wraps that widget in a GTK window, and a Python binding.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libatk1.0_0-1.24.0-1
-  libfontconfig1-2.6.0-1
-  libfreetype26-2.3.7-1
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libGL1-7.2-2
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
-  libintl8-0.17-2
-  libncurses8-5.5-3
-  libpango1.0_0-1.22.3-1
-  libX11_6-1.1.5-1
-  libXft2-2.1.13-1
-  libXrender1-0.9.4-2
+  cygwin-1.7.0-43
+  libatk1.0_0-1.26.0-1
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libncurses9-5.7-13
+  libpango1.0_0-1.24.0-1
 (python-vte)
-  python-2.5.2-4
-  python-gobject2-2.15.4-1
-  python-gtk2-2.13.0-1
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
+  python-gtk2-2.14.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
-  cygport-0.4.3-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  cygport-0.9.6-1
   binutils-20080624-2
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
   gnome-common-2.24.0-1
-  gtk-doc-1.11-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  gtk-doc-1.11-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-1
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -46,18 +42,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vte-0.17.4-X-src.tar.bz2
+  unpack vte-0.20.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vte-0.17.4-X.cygport all
+  cygport ./vte-0.20.0-X.cygport all
 
 This will create:
-  /usr/src/python-vte-0.17.4-X.tar.bz2
-  /usr/src/vte-0.17.4-X-src.tar.bz2
-  /usr/src/vte-0.17.4-X.tar.bz2
-  /usr/src/libvte-devel-0.17.4-X.tar.bz2
-  /usr/src/libvte9-0.17.4-X.tar.bz2
+  /usr/src/python-vte-0.20.0-X.tar.bz2
+  /usr/src/vte-0.20.0-X-src.tar.bz2
+  /usr/src/vte-0.20.0-X.tar.bz2
+  /usr/src/libvte-devel-0.20.0-X.tar.bz2
+  /usr/src/libvte9-0.20.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -65,17 +61,17 @@ Files included in the binary packages:
 
 (vte)
   /usr/bin/vte.exe
-  /usr/share/doc/vte-0.17.4/AUTHORS
-  /usr/share/doc/vte-0.17.4/COPYING
-  /usr/share/doc/vte-0.17.4/ChangeLog
-  /usr/share/doc/vte-0.17.4/HACKING
-  /usr/share/doc/vte-0.17.4/INSTALL
-  /usr/share/doc/vte-0.17.4/MAINTAINERS
-  /usr/share/doc/vte-0.17.4/NEWS
-  /usr/share/doc/vte-0.17.4/README
+  /usr/share/doc/vte/AUTHORS
+  /usr/share/doc/vte/COPYING
+  /usr/share/doc/vte/ChangeLog
+  /usr/share/doc/vte/HACKING
+  /usr/share/doc/vte/MAINTAINERS
+  /usr/share/doc/vte/NEWS
+  /usr/share/doc/vte/README
   /usr/share/locale/am/LC_MESSAGES/vte.mo
   /usr/share/locale/ang/LC_MESSAGES/vte.mo
   /usr/share/locale/ar/LC_MESSAGES/vte.mo
+  /usr/share/locale/as/LC_MESSAGES/vte.mo
   /usr/share/locale/az/LC_MESSAGES/vte.mo
   /usr/share/locale/be/LC_MESSAGES/vte.mo
   /usr/share/locale/be@latin/LC_MESSAGES/vte.mo
@@ -136,13 +132,15 @@ Files included in the binary packages:
   /usr/share/locale/ro/LC_MESSAGES/vte.mo
   /usr/share/locale/ru/LC_MESSAGES/vte.mo
   /usr/share/locale/rw/LC_MESSAGES/vte.mo
+  /usr/share/locale/si/LC_MESSAGES/vte.mo
   /usr/share/locale/sk/LC_MESSAGES/vte.mo
   /usr/share/locale/sl/LC_MESSAGES/vte.mo
   /usr/share/locale/sq/LC_MESSAGES/vte.mo
   /usr/share/locale/sr/LC_MESSAGES/vte.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/vte.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/vte.mo
   /usr/share/locale/sv/LC_MESSAGES/vte.mo
   /usr/share/locale/ta/LC_MESSAGES/vte.mo
+  /usr/share/locale/te/LC_MESSAGES/vte.mo
   /usr/share/locale/th/LC_MESSAGES/vte.mo
   /usr/share/locale/tr/LC_MESSAGES/vte.mo
   /usr/share/locale/ug/LC_MESSAGES/vte.mo
@@ -157,14 +155,10 @@ Files included in the binary packages:
 (libvte9)
   /usr/bin/cygvte-9.dll
   /usr/lib/vte/decset
+  /usr/lib/vte/gnome-pty-helper.exe
   /usr/lib/vte/interpret.exe
-  /usr/lib/vte/iso8859mode.exe
-  /usr/lib/vte/nativeecho.exe
   /usr/lib/vte/osc
   /usr/lib/vte/slowcat.exe
-  /usr/lib/vte/utf8echo.exe
-  /usr/lib/vte/utf8mode.exe
-  /usr/lib/vte/vterdb.exe
   /usr/lib/vte/window
   /usr/share/vte/termcap/xterm
 
@@ -173,10 +167,11 @@ Files included in the binary packages:
   /usr/include/vte/reaper.h
   /usr/include/vte/vte.h
   /usr/include/vte/vteaccess.h
+  /usr/include/vte/vtetypebuiltins.h
+  /usr/include/vte/vteversion.h
   /usr/lib/libvte.dll.a
   /usr/lib/libvte.la
   /usr/lib/pkgconfig/vte.pc
-  /usr/share/gtk-doc/html/vte/VteReaper.html
   /usr/share/gtk-doc/html/vte/VteTerminal.html
   /usr/share/gtk-doc/html/vte/VteTerminalAccessible.html
   /usr/share/gtk-doc/html/vte/ch01.html
@@ -191,63 +186,17 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/vte/vte.devhelp2
 
 (python-vte)
+  /usr/lib/pkgconfig/pyvte.pc
   /usr/lib/python2.5/site-packages/gtk-2.0/vtemodule.dll
   /usr/lib/python2.5/site-packages/gtk-2.0/vtemodule.la
+  /usr/share/pygtk/2.0/defs/vte.defs
 
 --------------------
 
 Port Notes:
 
------ version 0.17.4-1 -----
-Version bump for GNOME 2.24.
-
------ version 0.16.14-1 -----
-Version bump.
-
------ version 0.16.12-1 -----
-Version bump.
-
------ version 0.16.11-1 -----
-Version bump.
-
------ version 0.16.9-1 -----
-Version bump.
-Disabled gnome-pty-helper, which would sometimes cause hanging startups.
-
------ version 0.16.8-1 -----
-Version bump.
-
------ version 0.16.6-1 -----
-Version bump for GNOME 2.18.
-
------ version 0.14.2-1 -----
-Version bump.
-
------ version 0.14.1-1 -----
-Version bump for GNOME 2.16.
-
------ version 0.12.2-1 -----
-Version bump.
-
------ version 0.12.1-1 -----
-Version bump for GNOME 2.14.
-
------ version 0.11.21-1 -----
-Version bump.
-
------ version 0.11.16-1 -----
-Version bump.
-Broke out separate devel and doc packages.
-
------ version 0.11.15-1 -----
-Version bump.
-Runtime library and python bindings broken out into separate packages.
-
------ version 0.11.11-2 -----
-Rebuilt against libncurses8 and python-2.4.
-
------ version 0.11.11-1 -----
-Initial release for Cygwin.
+----- version 0.20.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:

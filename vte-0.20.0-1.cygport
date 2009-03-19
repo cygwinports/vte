@@ -1,0 +1,21 @@
+inherit pygtk gnome2
+
+DESCRIPTION="GNOME Virtual Terminal Emulator"
+
+PATCH_URI="0.20.0-python-no-undefined.patch"
+
+PKG_NAMES="${PN} libvte9 libvte-devel python-vte"
+vte_CONTENTS="usr/bin/vte.exe usr/share/doc/ usr/share/locale/"
+libvte9_CONTENTS="usr/bin/cygvte-9.dll usr/lib/vte/ usr/share/vte/"
+libvte_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte.pc usr/share/gtk-doc/'
+python_vte_CONTENTS="usr/lib/pkgconfig/pyvte.pc ${PYTHON_SITELIB#/} usr/share/pygtk/"
+
+CYGCONF_ARGS="
+	--libexecdir=/usr/lib/vte
+	--enable-gnome-pty-helper
+	--enable-python
+	--with-default-emulation=xterm
+	--with-glX
+	--with-pangox
+	--with-xft2
+"
