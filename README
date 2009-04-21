@@ -5,13 +5,13 @@ emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
 wraps that widget in a GTK window, and a Python binding.
 
 Runtime requirements:
-  cygwin-1.7.0-43
+  cygwin-1.7.0-45
   libatk1.0_0-1.26.0-1
   libcairo2-1.8.6-10
   libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.0-1
-  libglib2.0_0-2.20.0-1
-  libgtk2.0_0-2.16.0-1
+  libgdk_pixbuf2.0_0-2.16.1-1
+  libglib2.0_0-2.20.1-1
+  libgtk2.0_0-2.16.1-1
   libintl8-0.17-10
   libncurses9-5.7-13
   libpango1.0_0-1.24.0-1
@@ -28,12 +28,12 @@ Build requirements:
   binutils-20080624-2
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gnome-common-2.24.0-1
+  gnome-common-2.26.0-1
   gtk-doc-1.11-2
   intltool-0.40.6-1
-  libtool-2.2.7a-1
+  libtool-2.2.7a-12
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical download:
@@ -42,18 +42,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vte-0.20.0-X-src.tar.bz2
+  unpack vte-0.20.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vte-0.20.0-X.cygport all
+  cygport ./vte-0.20.1-X.cygport all
 
 This will create:
-  /usr/src/python-vte-0.20.0-X.tar.bz2
-  /usr/src/vte-0.20.0-X-src.tar.bz2
-  /usr/src/vte-0.20.0-X.tar.bz2
-  /usr/src/libvte-devel-0.20.0-X.tar.bz2
-  /usr/src/libvte9-0.20.0-X.tar.bz2
+  /usr/src/python-vte-0.20.1-X.tar.bz2
+  /usr/src/vte-0.20.1-X-src.tar.bz2
+  /usr/src/vte-0.20.1-X.tar.bz2
+  /usr/src/libvte-devel-0.20.1-X.tar.bz2
+  /usr/src/libvte9-0.20.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -194,6 +194,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 0.20.1-1 -----
+Version bump.
 
 ----- version 0.20.0-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
