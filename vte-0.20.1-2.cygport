@@ -12,10 +12,7 @@ python_vte_CONTENTS="usr/lib/pkgconfig/pyvte.pc ${PYTHON_SITELIB#/} usr/share/py
 
 CYGCONF_ARGS="
 	--libexecdir=/usr/lib/vte
-	--enable-gnome-pty-helper
+	--disable-gnome-pty-helper
 	--enable-python
 	--with-default-emulation=xterm
-	--with-glX
-	--with-pangox
-	--with-xft2
 "

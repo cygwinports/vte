@@ -14,7 +14,7 @@ Runtime requirements:
   libgtk2.0_0-2.16.1-1
   libintl8-0.17-10
   libncurses9-5.7-13
-  libpango1.0_0-1.24.0-1
+  libpango1.0_0-1.24.1-1
 (python-vte)
   python-2.5.4-10
   python-gobject2-2.16.1-10
@@ -155,7 +155,6 @@ Files included in the binary packages:
 (libvte9)
   /usr/bin/cygvte-9.dll
   /usr/lib/vte/decset
-  /usr/lib/vte/gnome-pty-helper.exe
   /usr/lib/vte/interpret.exe
   /usr/lib/vte/osc
   /usr/lib/vte/slowcat.exe
@@ -194,6 +193,10 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 0.20.1-2 -----
+Disabled gnome-pty-helper support (again), as it leads to
+startup failures.
 
 ----- version 0.20.1-1 -----
 Version bump.
