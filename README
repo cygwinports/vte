@@ -5,16 +5,16 @@ emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
 wraps that widget in a GTK window, and a Python binding.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-48
   libatk1.0_0-1.26.0-1
   libcairo2-1.8.6-10
   libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.1-1
-  libglib2.0_0-2.20.1-1
-  libgtk2.0_0-2.16.1-1
+  libgdk_pixbuf2.0_0-2.16.2-1
+  libglib2.0_0-2.20.3-1
+  libgtk2.0_0-2.16.2-1
   libintl8-0.17-10
   libncurses9-5.7-13
-  libpango1.0_0-1.24.1-1
+  libpango1.0_0-1.24.2-1
 (python-vte)
   python-2.5.4-10
   python-gobject2-2.16.1-10
@@ -23,7 +23,7 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   cygport-0.9.6-1
   binutils-20080624-2
   gawk-3.1.6-2
@@ -42,18 +42,20 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vte-0.20.1-X-src.tar.bz2
+  unpack vte-0.20.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vte-0.20.1-X.cygport all
+  cygport ./vte-0.20.4-X.cygport all
 
 This will create:
-  /usr/src/python-vte-0.20.1-X.tar.bz2
-  /usr/src/vte-0.20.1-X-src.tar.bz2
-  /usr/src/vte-0.20.1-X.tar.bz2
-  /usr/src/libvte-devel-0.20.1-X.tar.bz2
-  /usr/src/libvte9-0.20.1-X.tar.bz2
+  /usr/src/glade3-vte-0.20.4-X.tar.bz2
+  /usr/src/python-vte-0.20.4-X.tar.bz2
+  /usr/src/vte-0.20.4-X-src.tar.bz2
+  /usr/src/vte-0.20.4-X.tar.bz2
+  /usr/src/libvte-common-0.20.4-X.tar.bz2
+  /usr/src/libvte-devel-0.20.4-X.tar.bz2
+  /usr/src/libvte10-0.20.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,6 +63,11 @@ Files included in the binary packages:
 
 (vte)
   /usr/bin/vte.exe
+  /usr/lib/vte/decset
+  /usr/lib/vte/interpret.exe
+  /usr/lib/vte/osc
+  /usr/lib/vte/slowcat.exe
+  /usr/lib/vte/window
   /usr/share/doc/vte/AUTHORS
   /usr/share/doc/vte/COPYING
   /usr/share/doc/vte/ChangeLog
@@ -68,6 +75,11 @@ Files included in the binary packages:
   /usr/share/doc/vte/MAINTAINERS
   /usr/share/doc/vte/NEWS
   /usr/share/doc/vte/README
+
+(libvte10)
+  /usr/bin/cygvte-10.dll
+
+(libvte-common)
   /usr/share/locale/am/LC_MESSAGES/vte.mo
   /usr/share/locale/ang/LC_MESSAGES/vte.mo
   /usr/share/locale/ar/LC_MESSAGES/vte.mo
@@ -151,14 +163,6 @@ Files included in the binary packages:
   /usr/share/locale/zh_CN/LC_MESSAGES/vte.mo
   /usr/share/locale/zh_HK/LC_MESSAGES/vte.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/vte.mo
-
-(libvte9)
-  /usr/bin/cygvte-9.dll
-  /usr/lib/vte/decset
-  /usr/lib/vte/interpret.exe
-  /usr/lib/vte/osc
-  /usr/lib/vte/slowcat.exe
-  /usr/lib/vte/window
   /usr/share/vte/termcap/xterm
 
 (libvte-devel)
@@ -190,9 +194,18 @@ Files included in the binary packages:
   /usr/lib/python2.5/site-packages/gtk-2.0/vtemodule.la
   /usr/share/pygtk/2.0/defs/vte.defs
 
+(glade3-vte)
+  /usr/share/glade3/catalogs/vte.xml
+  /usr/share/glade3/pixmaps/hicolor/16x16/actions/widget-vte-terminal.png
+  /usr/share/glade3/pixmaps/hicolor/22x22/actions/widget-vte-terminal.png
+
 --------------------
 
 Port Notes:
+
+----- version 0.20.4-1 -----
+ABI version bump.
+Added glade3 catalog.
 
 ----- version 0.20.1-2 -----
 Disabled gnome-pty-helper support (again), as it leads to
