@@ -1,5 +1,5 @@
 category: Gnome Devel
-requires: glade3 libvte10
+requires: glade3 libvte9
 external-source: vte
 sdesc: "Glade VTE terminal emulator widget catalog"
 ldesc: "VTE includes a library (libvte) which implements such a terminal

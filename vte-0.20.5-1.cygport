@@ -5,16 +5,16 @@ DESCRIPTION="GNOME Virtual Terminal Emulator"
 PATCH_URI="0.20.0-python-no-undefined.patch
            0.20.4-glade-catalogue.patch"
 
-PKG_NAMES="${PN} libvte10 libvte-common libvte-devel python-vte glade3-vte"
+PKG_NAMES="${PN} libvte9 libvte-common libvte-devel python-vte glade3-vte"
 vte_CONTENTS="usr/bin/vte.exe usr/lib/vte/ usr/share/doc/"
 glade3_vte_CONTENTS="usr/share/glade3/"
-libvte10_CONTENTS="usr/bin/cygvte-10.dll" # usr/lib/libvte10/"
+libvte9_CONTENTS="usr/bin/cygvte-9.dll" # usr/lib/libvte9/"
 libvte_common_CONTENTS="usr/share/locale/ usr/share/vte/"
 libvte_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte.pc usr/share/gtk-doc/'
 python_vte_CONTENTS="usr/lib/pkgconfig/pyvte.pc ${PYTHON_SITELIB#/} usr/share/pygtk/"
 
 CYGCONF_ARGS="
-	--libexecdir=/usr/lib/libvte10
+	--libexecdir=/usr/lib/libvte9
 	--enable-glade-catalogue
 	--disable-gnome-pty-helper
 	--enable-python

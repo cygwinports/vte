@@ -28,7 +28,7 @@ Build requirements:
   binutils-20080624-2
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
+  gnome-common-2.26.0-2
   gtk-doc-1.11-2
   intltool-0.40.6-1
   libtool-2.2.7a-12
@@ -42,20 +42,20 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vte-0.20.4-X-src.tar.bz2
+  unpack vte-0.20.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vte-0.20.4-X.cygport all
+  cygport ./vte-0.20.5-X.cygport all
 
 This will create:
-  /usr/src/glade3-vte-0.20.4-X.tar.bz2
-  /usr/src/python-vte-0.20.4-X.tar.bz2
-  /usr/src/vte-0.20.4-X-src.tar.bz2
-  /usr/src/vte-0.20.4-X.tar.bz2
-  /usr/src/libvte-common-0.20.4-X.tar.bz2
-  /usr/src/libvte-devel-0.20.4-X.tar.bz2
-  /usr/src/libvte10-0.20.4-X.tar.bz2
+  /usr/src/glade3-vte-0.20.5-X.tar.bz2
+  /usr/src/python-vte-0.20.5-X.tar.bz2
+  /usr/src/vte-0.20.5-X-src.tar.bz2
+  /usr/src/vte-0.20.5-X.tar.bz2
+  /usr/src/libvte-common-0.20.5-X.tar.bz2
+  /usr/src/libvte-devel-0.20.5-X.tar.bz2
+  /usr/src/libvte9-0.20.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -76,8 +76,8 @@ Files included in the binary packages:
   /usr/share/doc/vte/NEWS
   /usr/share/doc/vte/README
 
-(libvte10)
-  /usr/bin/cygvte-10.dll
+(libvte9)
+  /usr/bin/cygvte-9.dll
 
 (libvte-common)
   /usr/share/locale/am/LC_MESSAGES/vte.mo
@@ -203,8 +203,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.20.4-1 -----
-ABI version bump.
+----- version 0.20.5-1 -----
+Version bump.
 Added glade3 catalog.
 
 ----- version 0.20.1-2 -----
