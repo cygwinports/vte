@@ -1,5 +1,5 @@
 category: Gnome
-requires: libatk1.0_0 libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libncurses9 libpango1.0_0 libvte-common
+requires: libatk1.0_0 libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libncurses9 libpango1.0_0 libX11_6 libvte-common
 external-source: vte
 sdesc: "GTK+ terminal emulator widget (runtime)"
 ldesc: "VTE includes a library (libvte) which implements such a terminal
