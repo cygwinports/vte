@@ -1,6 +1,0 @@
-category: Gnome
-external-source: vte
-sdesc: "GTK+ terminal emulator widget (common runtime data)"
-ldesc: "VTE includes a library (libvte) which implements such a terminal
-emulator widget for GTK+ 2.x, a sample application (vte) which
-wraps that widget in a GTK window, and a Python binding."
