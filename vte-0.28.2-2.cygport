@@ -2,8 +2,11 @@ inherit pygtk gnome2
 
 DESCRIPTION="GNOME Virtual Terminal Emulator"
 
-PATCH_URI="0.20.0-python-no-undefined.patch
-           0.20.4-glade-catalogue.patch"
+PATCH_URI="
+	http://patch-tracker.debian.org/patch/series/dl/vte/1:0.28.2-4/02_meta.patch
+	0.20.0-python-no-undefined.patch
+	0.20.4-glade-catalogue.patch
+"
 
 PKG_NAMES="${PN} libvte9 libvte-devel girepository-Vte0.0 python-vte glade3-vte"
 vte_CONTENTS="usr/bin/vte*.exe usr/share/doc/"
