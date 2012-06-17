@@ -3,7 +3,9 @@ inherit pygtk gnome2
 DESCRIPTION="GNOME Virtual Terminal Emulator"
 
 PATCH_URI="
-	http://patch-tracker.debian.org/patch/series/dl/vte/1:0.28.2-4/02_meta.patch
+	fedora/vte-0.28.2-limit-arguments.patch
+	fedora/vte-alt-meta-confusion.patch
+	fedora/vte-python-bugfixes.patch
 	0.20.0-python-no-undefined.patch
 	0.20.4-glade-catalogue.patch
 "
@@ -24,3 +26,5 @@ CYGCONF_ARGS="
 	--enable-python
 	--with-default-emulation=xterm
 "
+
+KEEP_LA_FILES="shared"
