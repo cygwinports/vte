@@ -1,6 +1,13 @@
 inherit pygtk gnome2
 
-DESCRIPTION="GNOME Virtual Terminal Emulator"
+NAME="vte"
+VERSION=0.28.2
+RELEASE=4
+CATEGORY="GNOME"
+SUMMARY="GTK+ terminal emulator"
+DESCRIPTION="VTE includes a library (libvte) which implements such a terminal
+emulator widget for GTK+ 2.x, a sample application (vte) which wraps that
+widget in a GTK window, and a Python binding."
 
 PATCH_URI="
 	fedora/vte-0.28.2-limit-arguments.patch
@@ -12,10 +19,17 @@ PATCH_URI="
 
 PKG_NAMES="${PN} libvte9 libvte-devel girepository-Vte0.0 python-vte glade3-vte"
 vte_CONTENTS="usr/bin/vte*.exe usr/share/doc/"
+glade3_vte_SUMMARY="Glade VTE terminal emulator widget catalog"
+glade3_vte_REQUIRES="glade3 libvte9"
 glade3_vte_CONTENTS="usr/share/glade3/"
+libvte9_SUMMARY="${SUMMARY} widget library (runtime)"
 libvte9_CONTENTS="usr/bin/cygvte-9.dll usr/share/locale/ usr/share/vte/"
+libvte_devel_SUMMARY="${SUMMARY} widget library (development)"
 libvte_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte.pc usr/share/gtk-doc/'
+girepository_Vte0_0_SUMMARY="${SUMMARY} widget library (GObject Introspection)"
 girepository_Vte0_0_CONTENTS="usr/*/gir*/Vte-0.0.*"
+python_vte_SUMMARY="${SUMMARY} (Python bindings)"
+python_vte_REQUIRES="python-gobject python-gtk2.0"
 python_vte_CONTENTS="usr/lib/pkgconfig/pyvte.pc ${PYTHON_SITELIB#/} usr/share/pygtk/"
 
 CYGCONF_ARGS="
@@ -26,5 +40,3 @@ CYGCONF_ARGS="
 	--enable-python
 	--with-default-emulation=xterm
 "
-
-KEEP_LA_FILES="shared"
