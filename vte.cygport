@@ -2,7 +2,7 @@ inherit pygtk gnome2
 
 NAME="vte"
 VERSION=0.28.2
-RELEASE=5
+RELEASE=6
 CATEGORY="GNOME"
 SUMMARY="GTK+ terminal emulator"
 DESCRIPTION="VTE includes a library (libvte) which implements such a terminal
@@ -17,6 +17,7 @@ PATCH_URI="
 	fedora/vte-0.28.2-paste-fix.diff
 	0.20.0-python-no-undefined.patch
 	0.20.4-glade-catalogue.patch
+	0.28.2-introspection-fixes.patch
 "
 
 PKG_NAMES="${PN} libvte9 libvte-devel girepository-Vte0.0 python-vte glade3-vte"
